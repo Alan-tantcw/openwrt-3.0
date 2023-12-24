@@ -18,9 +18,9 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 
 # Alan的插件
- luci-app-tencentddns腾讯云DDNS
+# luci-app-tencentddns腾讯云DDNS
 git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
-#luci-app-ipsec-vpnserver ipsec插件
+# luci-app-ipsec-vpnserver ipsec插件
 git clone --depth=1 https://github.com/MrHongping/luci-app-ipsec-vpnserver package/luci-app-ipsec-vpnserver
 
 
