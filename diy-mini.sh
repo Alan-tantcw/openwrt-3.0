@@ -64,9 +64,8 @@ svn export https://github.com/sbwml/luci-app-alist/trunk/luci-app-alist package/
 svn export https://github.com/sbwml/luci-app-alist/trunk/alist package/alist
 
 # iStore
-# svn export https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
-# svn export https://github.com/linkease/istore/trunk/luci package/luci-app-store
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-istorex package/luci-app-istorex
+svn export https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
+svn export https://github.com/linkease/istore/trunk/luci package/luci-app-store
 
 # 在线用户
 svn export https://github.com/haiibo/packages/trunk/luci-app-onliner package/luci-app-onliner
