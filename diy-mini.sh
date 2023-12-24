@@ -22,6 +22,9 @@ git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/lu
 git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 # svn export https://github.com/syb999/openwrt-19.07.1/trunk/package/network/services/msd_lite package/msd_lite
 
+# luci-app-tencentddns腾讯云DDNS
+git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
+
 # 科学上网插件
 # git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
 # svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/luci-app-vssr
