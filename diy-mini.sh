@@ -25,7 +25,8 @@ rm -rf feeds/luci/applications/luci-app-netdata
 # 腾讯云DDNS
 git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
 # ipsec插件
-git clone --depth=1 https://github.com/MrHongping/luci-app-ipsec-vpnserver package/luci-app-ipsec-vpnserver
+# git clone --depth=1 https://github.com/MrHongping/luci-app-ipsec-vpnserver package/luci-app-ipsec-vpnserver
+git clone --depth=1  https://github.com/Ivaneus/luci-app-ipsec-server package/luci-app-ipsec-vpnserver
 # softEther (不启用)
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 
