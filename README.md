@@ -14,8 +14,9 @@
 编译固件有2点。。。
 
 1.在diy-mini.sh 中git clone软件包，或者直接写入软件源
-1.1源推荐                
-#-Lienol源：https://github.com/Lienol/openwrt-package
+- 1.1源推荐 
+- #-Lienol源：https://github.com/Lienol/openwrt-package
+- 
 2.在x86_64.config 中写入安装命令  [CONFIG_PACKAGE_luci-app-tencentddns=y]
 
 ## 项目说明 [![](https://img.shields.io/badge/-项目基本介绍-FFFFFF.svg)](#项目说明-)
