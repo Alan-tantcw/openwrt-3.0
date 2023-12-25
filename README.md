@@ -13,11 +13,12 @@
 ## 写在最前面
 编译固件有2点。。。
 
-1.在diy-mini.sh 中git clone软件包，或者直接写入软件源
-- 1.1源推荐 
-- #-Lienol源：https://github.com/Lienol/openwrt-package
-- 
-2.在x86_64.config 中写入安装命令  [CONFIG_PACKAGE_luci-app-tencentddns=y]
+#1.在diy-mini.sh 中git clone软件包，或者直接写入软件源
+- 1.1源推荐
+1. Lienol源：https://github.com/Lienol/openwrt-package
+2. 集成部分常用有线、无线、3G / 4G 网卡驱动
+
+#2.在x86_64.config 中写入安装命令  [CONFIG_PACKAGE_luci-app-tencentddns=y]
 
 ## 项目说明 [![](https://img.shields.io/badge/-项目基本介绍-FFFFFF.svg)](#项目说明-)
 - 固件构成：[![Lean](https://img.shields.io/badge/Lede-Lean-ff69b4.svg?style=flat&logo=appveyor)](https://github.com/coolsnowwolf/lede) [![P3TERX](https://img.shields.io/badge/OpenWrt-P3TERX-blueviolet.svg?style=flat&logo=appveyor)](https://github.com/P3TERX/Actions-OpenWrt) [![Flippy](https://img.shields.io/badge/Package-Flippy-orange.svg?style=flat&logo=appveyor)](https://github.com/unifreq/openwrt_packit) [![Haiibo](https://img.shields.io/badge/Build-Haiibo-32C955.svg?style=flat&logo=appveyor)](https://github.com/haiibo/OpenWrt)
