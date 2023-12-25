@@ -20,7 +20,8 @@ rm -rf feeds/luci/applications/luci-app-netdata
 # 直接增加多软件仓库   -未启动
 # echo 'src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default
 
-# ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone   2.多目录指定或要进下级目录 用 svn export
+# ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone   
+# ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
 # 腾讯云DDNS
 git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
 # ipsec插件
