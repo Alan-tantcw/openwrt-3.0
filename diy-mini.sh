@@ -28,6 +28,8 @@ git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/
 # git clone --depth=1 https://github.com/Ivaneus/luci-app-ipsec-vpnserver-manyusers package/luci-app-ipsec-vpnserver-manyusers
 # softEther (不启用)
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
+# passwall
+git clone --depth=1 https://github.com/1mi9908303/luci-app-passwall-plus package/luci-app-passwall-plus
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
@@ -42,7 +44,6 @@ git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-a
 # svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 # svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/luci-app-passwall2
 # svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-git clone --depth=1 https://github.com/chongteng2017/luci-app-passwall package/luci-app-passwall
 
 # Themes
 # git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
