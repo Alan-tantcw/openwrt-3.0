@@ -7,7 +7,7 @@ sed -i 's/192.168.1.1/11.1.1.1/g' package/base-files/files/bin/config_generate
 # sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # TTYD 自动登录
-# sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
+sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 
 # 移除要替换的包
 rm -rf feeds/packages/net/mosdns
@@ -18,7 +18,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 
 # 直接增加多软件仓库   -未启动
-echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+# echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 
 # ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone   
 # ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
