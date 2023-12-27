@@ -31,6 +31,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 # passwall
 # svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+svn export https://github.com/yasum2006/luci-app-passwall/trunk/luci-app-passwall package/luci-app-passwall
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
