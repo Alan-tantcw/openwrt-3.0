@@ -16,7 +16,7 @@
 #1.在diy-mini.sh 中git clone软件包，或者直接写入软件源
 - 1.1源推荐
 1. Lienol源：https://github.com/Lienol/openwrt-package
-2. kenzok8small包：https://github.com/kenzok8/small
+2. kenzok8small包：https://github.com/kenzok8/small-package
 3. 集成部分常用有线、无线、3G / 4G 网卡驱动
 
 #2.在x86_64.config 中写入安装命令  [CONFIG_PACKAGE_luci-app-tencentddns=y]
