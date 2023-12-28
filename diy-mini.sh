@@ -32,7 +32,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # passwall
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 # vssr 插件  
-git clone --depth=1 https://github.com/dqylyln/luci-app-vssr package/luci-app-vssr
+# git clone --depth=1 https://github.com/dqylyln/luci-app-vssr package/luci-app-vssr
 
 # 科学上网插件依赖
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
