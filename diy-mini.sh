@@ -38,6 +38,7 @@ svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-passwall p
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 # echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall-packages' >> feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
+rm -rf feeds/luci/applications/luci-app-ssr-plus
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
