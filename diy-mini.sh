@@ -20,8 +20,9 @@ rm -rf feeds/luci/applications/luci-app-netdata
 # 直接增加多软件仓库   -未启动
 # echo 'src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' >>feeds.conf.default
 
-# ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone           git clone为需要手动添加依赖，echo则自动添加依赖
+# ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone           
 # ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
+# ---------------------------------------------------------------3.依赖包用echo指定到feeds，会自动安装依赖，clone 或者 svn export 指定luci插件
 # 腾讯云DDNS
 git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
 # ipsec插件
