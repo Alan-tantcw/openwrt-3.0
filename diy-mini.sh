@@ -36,7 +36,7 @@ git clone --depth=1 https://github.com/dqylyln/luci-app-vssr package/luci-app-vs
 
 # 科学上网插件依赖
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 添加额外插件
