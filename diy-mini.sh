@@ -36,7 +36,8 @@ svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
 
 # 科学上网插件依赖
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
+echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall-packages' >> feeds.conf.default
+# echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
