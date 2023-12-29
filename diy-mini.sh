@@ -29,10 +29,11 @@ svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/luci-a
 # svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 # svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/luci-app-passwall2
 # svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-# passwall软件源+luci
-# git clone --depth=1 https://github.com/VictC79/openwrt-passwall-packages package/openwrt-passwall-packages
+# passwall软件源+依赖包
+git clone --depth=1 https://github.com/VictC79/openwrt-passwall-packages package/openwrt-passwall-packages
+# passwall luci包
+# svn export https://github.com/haiibo/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 svn export https://github.com/kenzok8/small/trunk/luci-app-passwall package/luci-app-passwall
-svn export https://github.com/haiibo/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
