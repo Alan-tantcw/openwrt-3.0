@@ -17,6 +17,23 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 
+
+# ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone           
+# ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
+# ---------------------------------------------------------------3.依赖包用echo指定到feeds，会自动安装依赖，clone 或者 svn export 指定luci插件
+# 腾讯云DDNS
+git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
+# ipsec插件
+svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server package/luci-app-ipsec-server
+# softEther (不启用)
+svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
+# passwall
+# -1 svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-passwall package/luci-app-passwall
+# svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+# vssr 插件  
+# git clone --depth=1 https://github.com/dqylyln/luci-app-vssr package/luci-app-vssr
+
+
 # 添加额外插件
 # git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 # git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
