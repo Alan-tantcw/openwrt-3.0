@@ -30,7 +30,7 @@ rm -rf feeds/luci/applications/luci-app-netdata
 
 
 # passwall软件源+依赖包
-#echo 'src-git helloworldAlan https://github.com/Alan-tantcw/openwrt-packages' >>feeds.conf.default
+echo 'src-git helloworldAlan https://github.com/Alan-tantcw/openwrt-packages' >>feeds.conf.default
 # passwall luci包
 svn export https://github.com/trilong0610/luci-app-passwall2-118/trunk/luci-app-passwall2 package/luci-app-passwall2
 
