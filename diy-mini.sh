@@ -32,7 +32,10 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 # vssr 插件  
 # git clone --depth=1 https://github.com/dqylyln/luci-app-vssr package/luci-app-vssr
-
+# passwall软件源+依赖包
+echo 'src-git helloworldAlan https://github.com/Alan-tantcw/openwrt-packages' >>feeds.conf.default
+# passwall luci包
+svn export https://github.com/trilong0610/luci-app-passwall2-118/trunk/luci-app-passwall2 package/luci-app-passwall2
 
 # 添加额外插件
 # git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
@@ -44,12 +47,6 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 # svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
-
-
-# passwall软件源+依赖包
-echo 'src-git helloworldAlan https://github.com/Alan-tantcw/openwrt-packages' >>feeds.conf.default
-# passwall luci包
-svn export https://github.com/trilong0610/luci-app-passwall2-118/trunk/luci-app-passwall2 package/luci-app-passwall2
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
