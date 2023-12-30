@@ -18,22 +18,21 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 
 # 添加额外插件
-git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
-git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
+# git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
+# git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 # svn export https://github.com/syb999/openwrt-19.07.1/trunk/package/network/services/msd_lite package/msd_lite
 
 # 科学上网插件
-git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+# git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
+# git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+# svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 
 
 # passwall软件源+依赖包
-# git clone --depth=1 https://github.com/VictC79/openwrt-passwall-packages package/openwrt-passwall-packages
+#echo 'src-git helloworldAlan https://github.com/Alan-tantcw/openwrt-packages' >>feeds.conf.default
 # passwall luci包
 svn export https://github.com/trilong0610/luci-app-passwall2-118/trunk/luci-app-passwall2 package/luci-app-passwall2
-# svn export https://github.com/kenzok8/small/trunk/luci-app-passwall package/luci-app-passwall
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
