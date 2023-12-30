@@ -19,6 +19,7 @@
 2. xuexini:https://github.com/NueXini/NueXini_Packages
 3. kenzok8_small包(常更新)：https://github.com/kenzok8/small-package
 4. 集成部分常用有线、无线、3G / 4G 网卡驱动
+5. istore插件：https://github.com/AUK9527/Are-u-ok
 
 #2.在x86_64.config 中写入安装命令  [CONFIG_PACKAGE_luci-app-tencentddns=y]
 
