@@ -28,14 +28,8 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server
 # softEther (不启用)
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 # passwall
-# -1 svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-passwall package/luci-app-passwall
-# svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
-# vssr 插件  
-# git clone --depth=1 https://github.com/dqylyln/luci-app-vssr package/luci-app-vssr
-# passwall软件源+依赖包
-echo 'src-git helloworldAlan https://github.com/Alan-tantcw/openwrt-packages' >>feeds.conf.default
-# passwall luci包
-svn export https://github.com/trilong0610/luci-app-passwall2-118/trunk/luci-app-passwall2 package/luci-app-passwall2
+git clone --depth=1 https://github.com/haiibo/openwrt-packages package/openwrt-packages
+
 
 # 添加额外插件
 # git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
