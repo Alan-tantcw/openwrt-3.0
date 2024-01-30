@@ -29,10 +29,11 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 # passwall
 git clone --depth=1 https://github.com/kenzok8/small package/openwrt-packagesAlan
+# 引用其他源
 rm -rf package/openwrt-packagesAlan/*ssr* package/openwrt-packagesAlan/*bypass* package/openwrt-packagesAlan/*vssr*
-rm -rf packages/openwrt-packagesAlan/luci-app-passwall2
+rm -rf packages/openwrt-packagesAlan/luci-app-passwall
 rm -rf packages/openwrt-packagesAlan/luci-app-ssr-plus
-git clone --depth=1 https://github.com/trilong0610/luci-app-passwall2-118 package/luci-app-passwall2
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 
 
 # 添加额外插件
@@ -50,7 +51,7 @@ git clone --depth=1 https://github.com/trilong0610/luci-app-passwall2-118 packag
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 # 更改 Argon 主题背景
-cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
+# cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 # SmartDNS
 git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
