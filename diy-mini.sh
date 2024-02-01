@@ -40,10 +40,10 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # passwall
 # git clone --depth=1 https://github.com/kenzok8/small package/openwrt-packagesAlan
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
-# rm -rf package/openwrt-packagesAlan/*ssr* package/openwrt-packagesAlan/*bypass* package/openwrt-packagesAlan/*vssr*
-# rm -rf packages/openwrt-packagesAlan/luci-app-passwall
-# rm -rf packages/openwrt-packagesAlan/luci-app-ssr-plus
-# svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+#  passwall-packages
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
+#  luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci
 
 
 # 添加额外插件
