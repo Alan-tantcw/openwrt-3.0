@@ -18,6 +18,16 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 
 
+# Git稀疏克隆，只克隆指定目录到本地
+function git_sparse_clone() {
+  branch="$1" repourl="$2" && shift 2
+  git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
+  repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
+  cd $repodir && git sparse-checkout set $@
+  mv -f $@ ../package
+  cd .. && rm -rf $repodir
+}
+
 # ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone           
 # ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
 # ---------------------------------------------------------------3.依赖包用echo指定到feeds，会自动安装依赖，clone 或者 svn export 指定luci插件
@@ -37,15 +47,10 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 
 
 # 添加额外插件
-# git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
+git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 # git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 # svn export https://github.com/syb999/openwrt-19.07.1/trunk/package/network/services/msd_lite package/msd_lite
 
-# 科学上网插件
-# git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
-# git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
-# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-# svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
