@@ -71,8 +71,7 @@ svn export https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns packag
 svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
 
 # Alist
-svn export https://github.com/sbwml/luci-app-alist/trunk/luci-app-alist package/luci-app-alist
-svn export https://github.com/sbwml/luci-app-alist/trunk/alist package/alist
+git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
 # iStore
 svn export https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
