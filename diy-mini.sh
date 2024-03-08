@@ -42,7 +42,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
-# git clone --depth=1 https://github.com/kenzok8/small package/luci-app-passwall
+# svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-openclash package/luci-app-openclash
 
 
 # 添加额外插件
