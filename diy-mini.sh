@@ -39,13 +39,9 @@ git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server package/luci-app-ipsec-server
 # softEther (不启用)
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
-# passwall
-# git clone --depth=1 https://github.com/kenzok8/small package/openwrt-packagesAlan
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
-#  passwall-packages
-# git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
-#  luci-app-passwall
-# git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci-app-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 
 
 # 添加额外插件
