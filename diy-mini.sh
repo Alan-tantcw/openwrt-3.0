@@ -40,8 +40,8 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server
 # softEther (不启用)
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 
 
 # 添加额外插件
