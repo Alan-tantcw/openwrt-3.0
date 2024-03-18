@@ -20,6 +20,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/openwrt-passwall
+rm -rf feeds/luci/applications/luci-app-ssr-plus
 
 
 # Git稀疏克隆，只克隆指定目录到本地
