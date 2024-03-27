@@ -12,6 +12,8 @@
 
 ## 写在最前面
 编译固件有2点。。。
+0. istore 离线安装
+https://github.com/AUK9527/Are-u-ok/tree/main/x86
 
 #1.在diy-mini.sh 中git clone软件包，或者直接写入软件源
 - 1.1源推荐
