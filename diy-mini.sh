@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# 备份文件在diy-script.sh中，直接复制恢复
 # 修改默认IP
 sed -i 's/192.168.1.1/11.1.1.1/g' package/base-files/files/bin/config_generate
 # 禁用ipv6
