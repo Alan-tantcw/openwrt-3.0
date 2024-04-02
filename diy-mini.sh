@@ -20,15 +20,6 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 
 
-# Git稀疏克隆，只克隆指定目录到本地
-function git_sparse_clone() {
-  branch="$1" repourl="$2" && shift 2
-  git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
-  repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
-  cd $repodir && git sparse-checkout set $@
-  mv -f $@ ../package
-  cd .. && rm -rf $repodir
-}
 
 # ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone           
 # ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
@@ -46,7 +37,8 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
-svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-openclash package/luci-app-openclash
+svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-passwall package/luci-app-passwall
+git clone --depth=1 https://github.com/kenzok8/openwrt-packages package/passwall-packages
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
