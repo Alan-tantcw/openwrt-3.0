@@ -20,9 +20,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 
 # kenzok8依赖清除，防止冲突
-rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,smartdns}
-rm -rf feeds/packages/utils/v2dat
-rm -rf feeds/packages/lang/golang
+# rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,smartdns}
 
 
 
