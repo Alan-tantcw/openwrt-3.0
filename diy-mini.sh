@@ -46,7 +46,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
-svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-passwall package/luci-app-passwall
+svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-openclash package/luci-app-openclash
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
