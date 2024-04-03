@@ -41,7 +41,14 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-passwall package/luci-app-passwall
-git clone --depth=1 https://github.com/kenzok8/openwrt-packages package/passwall-packages
+svn export https://github.com/NueXini/NueXini_Packages/trunk/hysteria package/hysteria
+svn export https://github.com/NueXini/NueXini_Packages/trunk/NaiveProxy package/NaiveProxy
+svn export https://github.com/NueXini/NueXini_Packages/trunk/shadowsocks-rust package/shadowsocks-rust
+svn export https://github.com/NueXini/NueXini_Packages/trunk/shadowsocksr-libev package/shadowsocksr-libev
+svn export https://github.com/NueXini/NueXini_Packages/trunk/trojan package/trojan
+svn export https://github.com/NueXini/NueXini_Packages/trunk/tuic-client package/tuic-client
+svn export https://github.com/NueXini/NueXini_Packages/trunk/v2ray-geodata package/v2ray-geodata
+svn export https://github.com/NueXini/NueXini_Packages/trunk/xray-plugin package/xray-plugin
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
