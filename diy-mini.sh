@@ -48,7 +48,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+git_sparse_clone master https://github.com/xiaorouji/openwrt-passwall/tree/main/luci-app-passwall luci-app-passwall
 svn export https://github.com/NueXini/NueXini_Packages/trunk/hysteria package/hysteria
 svn export https://github.com/NueXini/NueXini_Packages/trunk/NaiveProxy package/NaiveProxy
 svn export https://github.com/NueXini/NueXini_Packages/trunk/shadowsocks-rust package/shadowsocks-rust
