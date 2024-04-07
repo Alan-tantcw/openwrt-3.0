@@ -48,23 +48,8 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
-git_sparse_clone master https://github.com/xiaorouji/openwrt-passwall.git luci-app-passwall
-svn export https://github.com/NueXini/NueXini_Packages/trunk/hysteria package/hysteria
-svn export https://github.com/NueXini/NueXini_Packages/trunk/NaiveProxy package/NaiveProxy
-svn export https://github.com/NueXini/NueXini_Packages/trunk/shadowsocks-rust package/shadowsocks-rust
-svn export https://github.com/NueXini/NueXini_Packages/trunk/shadowsocksr-libev package/shadowsocksr-libev
-svn export https://github.com/NueXini/NueXini_Packages/trunk/trojan package/trojan
-svn export https://github.com/NueXini/NueXini_Packages/trunk/tuic-client package/tuic-client
-svn export https://github.com/NueXini/NueXini_Packages/trunk/v2ray-geodata package/v2ray-geodata
-svn export https://github.com/NueXini/NueXini_Packages/trunk/v2raya package/v2raya
-svn export https://github.com/NueXini/NueXini_Packages/trunk/v2ray-plugin package/v2ray-plugin
-svn export https://github.com/NueXini/NueXini_Packages/trunk/xray-core package/xray-core
-svn export https://github.com/NueXini/NueXini_Packages/trunk/xray-plugin package/xray-plugin
-svn export https://github.com/NueXini/NueXini_Packages/trunk/chinadns-ng package/chinadns-ng
-svn export https://github.com/NueXini/NueXini_Packages/trunk/luci-app-haproxy-tcp package/luci-app-haproxy-tcp
-svn export https://github.com/NueXini/NueXini_Packages/trunk/naiveproxy package/naiveproxy
-svn export https://github.com/NueXini/NueXini_Packages/trunk/pdnsd-alt package/pdnsd-alt
-svn export https://github.com/NueXini/NueXini_Packages/trunk/simple-obfs package/simple-obfs
+svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/luci-app-vssr
+
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
