@@ -18,6 +18,7 @@ rm -rf feeds/packages/net/smartdns
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
+rm -rf package/helloworld
 
 # kenzok8依赖清除，防止冲突
 rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
