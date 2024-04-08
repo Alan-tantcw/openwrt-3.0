@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+
 # 修改默认IP
 sed -i 's/192.168.1.1/11.1.1.1/g' package/base-files/files/bin/config_generate
 # 禁用ipv6
@@ -45,7 +45,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
 # 科学上网插件
 svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/luci-app-vssr
-
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
