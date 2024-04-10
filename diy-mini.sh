@@ -47,10 +47,11 @@ function clonesubdir() {
   git sparse-checkout set $subdir
   git checkout $branch
   cd ..
+# 使用方式示例：
+# clonesubdir https://github.com/haiibo/packages main luci-app-vssr
 }
 
-# 使用方式示例：
-# clone_subdir https://github.com/haiibo/packages main luci-app-vssr
+
 
 
 
@@ -66,10 +67,11 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
 # 科学上网插件
 # git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
-# git_sparse_clone main https://github.com/haiibo/openwrt-packages helloworld
-# git_sparse_clone main https://github.com/haiibo/openwrt-packages openwrt-passwall
-# git_sparse_clone main https://github.com/haiibo/openwrt-packages luci-app-passwall
-# git_sparse_clone main https://github.com/haiibo/packages luci-app-vssr
+clonesubdir https://github.com/haiibo/openwrt-packages main helloworld
+clonesubdir https://github.com/haiibo/openwrt-packages main openwrt-passwall
+clonesubdir https://github.com/haiibo/openwrt-packages main luci-app-passwall
+clonesubdir https://github.com/haiibo/packages main luci-app-vssr
+
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
