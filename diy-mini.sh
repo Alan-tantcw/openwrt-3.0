@@ -45,8 +45,8 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
 # 科学上网插件
 git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
-svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/luci-app-vssr
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/helloworld/luci-app-vssr
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/helloworld/openwrt-passwall
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
