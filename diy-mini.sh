@@ -33,6 +33,27 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
+
+
+# gpt 克隆
+function clonesubdir() {
+  local repo_url=$1
+  local branch=$2
+  local subdir=$3
+  local repo_name=$(basename "$repo_url" .git)
+  git clone --filter=blob:none --no-checkout $repo_url $repo_name
+  cd $repo_name || exit 1
+  git sparse-checkout init --cone
+  git sparse-checkout set $subdir
+  git checkout $branch
+  cd ..
+}
+
+# 使用方式示例：
+# clone_subdir https://github.com/haiibo/packages main luci-app-vssr
+
+
+
 # ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone           
 # ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
 # ---------------------------------------------------------------3.依赖包用echo指定到feeds，会自动安装依赖，clone 或者 svn export 指定luci插件
