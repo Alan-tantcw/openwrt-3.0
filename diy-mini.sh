@@ -36,19 +36,14 @@ function git_sparse_clone() {
 
 
 # gpt 克隆
-function clonesubdir() {
-  local repo_url=$1
-  local branch=$2
-  local subdir=$3
-  local repo_name=$(basename "$repo_url" .git)
-  git clone --filter=blob:none --no-checkout $repo_url $repo_name
-  cd $repo_name || exit 1
-  git sparse-checkout init --cone
-  git sparse-checkout set $subdir
-  git checkout $branch
-  cd ..
-# 使用方式示例：
-# clonesubdir https://github.com/haiibo/packages main luci-app-vssr
+# Git稀疏克隆，haibo  目录
+function git_pas_clone() {
+  branch="$1" repourl="$2" && shift 2
+  git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
+  repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
+  cd $repodir && git sparse-checkout set $@
+  mv -f $@ ../package/openwrt-packages/
+  cd .. && rm -rf $repodir
 }
 
 
@@ -66,12 +61,13 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server
 svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
 # 科学上网插件
-git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
-# ################git_sparse_clone master https://github.com/haiibo/openwrt-packages helloworld
-# git_sparse_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
+# 方案1  先关闭#git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
+# 方案2  自己研究
+git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
+git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
 # git_sparse_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall2
 # #####################git_sparse_clone main https://github.com/haiibo/packages luci-app-vssr
-# git clone --depth=1 https://github.com/haiibo/openwrt-packages openwrt-packages
+
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
