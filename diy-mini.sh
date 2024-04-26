@@ -42,6 +42,7 @@ function git_pas_clone() {
   git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
   repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
   cd $repodir && git sparse-checkout set $@
+  mkdir -p "../package/openwrt-packages/"
   mv -f $@ ../package/openwrt-packages/
   cd .. && rm -rf $repodir
 }
