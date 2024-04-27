@@ -69,7 +69,7 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 # git_sparse_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall2
 # #####################git_sparse_clone main https://github.com/haiibo/packages luci-app-vssr
 # 删除sing-box
-rm -rf package/openwrt-passwall/sing-box
+
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
