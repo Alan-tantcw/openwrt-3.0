@@ -21,7 +21,7 @@ rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf package/helloworld
 
 # kenzok8依赖清除，防止冲突
-rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
+# rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
