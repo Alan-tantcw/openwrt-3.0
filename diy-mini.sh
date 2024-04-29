@@ -64,10 +64,10 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 科学上网插件
 # 方案1  先关闭#git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
 # 方案2  自己研究的passwall
-# git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
-# git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
+git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
+git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
 # 准备研究hellowordl
-git clone --depth=1 https://github.com/xuanranran/rely package/rely
+# git clone --depth=1 https://github.com/xuanranran/rely package/rely
 
 
 
