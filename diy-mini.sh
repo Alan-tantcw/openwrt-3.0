@@ -66,8 +66,9 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 方案2  自己研究的passwall
 git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
 git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
-# 准备研究hellowordl
-# git clone --depth=1 https://github.com/xuanranran/rely package/rely
+# 准备研究vssr
+git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
+git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
 
 
 
