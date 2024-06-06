@@ -51,6 +51,7 @@ function git_pas_clone() {
 
 
 
+
 # ------------------------Alan的插件-----------------------------1.仓库根目录用 git clone           
 # ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
 # ---------------------------------------------------------------3.依赖包用echo指定到feeds，会自动安装依赖，clone 或者 svn export 指定luci插件
@@ -63,14 +64,15 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 引用其他源-----------------------------------------------luci-app-passwall-----------------------------------------------
 # 科学上网插件
 # 方案1  先关闭#git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
-# 方案2  自己研究的passwall
-git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
-git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
-# 准备研究vssr
-git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
-git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
-
-
+# 方案2 --------------------------------passwall---------------------------------------------------------------
+# git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
+# git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
+# --------------------------------------vssr-----无用-----------------------------------------------------------
+# git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
+# git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
+# -------------------------------------------lely
+git clone --depth=1 https://github.com/xuanranran/rely package/rely
+rm -rf {*bypass*,*passwall2*}
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
