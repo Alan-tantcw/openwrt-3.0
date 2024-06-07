@@ -68,11 +68,12 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
 # git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
 # --------------------------------------vssr-----无用-----------------------------------------------------------
-git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
-git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
-git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
+# git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
+# git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
+# git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 # -------------------------------------------lely
+git clone --depth=1  https://github.com/liuran001/luci-app-vssr-plus package/luci-app-vssr-plus
 # git clone --depth=1 https://github.com/xuanranran/rely package/rely
 # rm -rf {*bypass*,*passwall2*}
 
