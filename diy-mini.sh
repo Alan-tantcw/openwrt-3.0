@@ -75,7 +75,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # -------------------------------------------lely
 git clone https://github.com/haiibo/openwrt-packages package/openwrt-packages
 # git clone --depth=1 https://github.com/xuanranran/rely package/rely
-# rm -rf {*bypass*,*passwall2*}
+rm -rf {*passwall*,*bypass*,luci-app-ssr-plus}
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
