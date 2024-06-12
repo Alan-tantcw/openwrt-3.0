@@ -74,7 +74,7 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 
 # -------------------------------------------lely
 # 验证是否正确，如能编译，放开 下方
-# git clone --depth=1 https://github.com/beilsn/luci-app-vssr-plus package/luci-app-vssr-plus
+git clone --depth=1 https://github.com/beilsn/luci-app-vssr-plus package/luci-app-vssr-plus
 git clone --depth=1 https://github.com/xuanranran/rely package/my
 rm -rf {*passwall*,*bypass*,luci-app-ssr-plus,luci-app-vssr}
 
