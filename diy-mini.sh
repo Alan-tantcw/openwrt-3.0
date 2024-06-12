@@ -73,8 +73,8 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 # -------------------------------------------lely
-# git clone https://github.com/haiibo/openwrt-packages package/my
-git clone --depth=1 https://github.com/beilsn/luci-app-vssr-plus package/luci-app-vssr-plus
+# 验证是否正确，如能编译，放开 下方
+# git clone --depth=1 https://github.com/beilsn/luci-app-vssr-plus package/luci-app-vssr-plus
 git clone --depth=1 https://github.com/xuanranran/rely package/my
 rm -rf {*passwall*,*bypass*,luci-app-ssr-plus,luci-app-vssr}
 
