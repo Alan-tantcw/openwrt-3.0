@@ -79,7 +79,7 @@ git clone --depth=1 https://github.com/xuanranran/rely package/my
 rm -rf {*passwall*,*bypass*,luci-app-ssr-plus,luci-app-vssr}
 
 
-#最新的 vssr
+#最新的 vssr                 ---------------lely 不能用用这个
 # git clone --depth=1 https://github.com/8688Add/luci-app-vssr-plus package/luci-app-vssr-plus
 
 # 添加额外插件
