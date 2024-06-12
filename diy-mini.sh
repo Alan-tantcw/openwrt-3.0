@@ -80,7 +80,7 @@ rm -rf {*passwall*,*bypass*,luci-app-ssr-plus,luci-app-vssr}
 
 
 #最新的 vssr
-git clone --depth=1 https://github.com/8688Add/luci-app-vssr-plus package/luci-app-vssr-plus
+# git clone --depth=1 https://github.com/8688Add/luci-app-vssr-plus package/luci-app-vssr-plus
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
