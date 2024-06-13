@@ -65,22 +65,22 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # 科学上网插件
 # 方案1  先关闭#git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
 # 方案2 --------------------------------passwall---------------------------------------------------------------
-# git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
-# git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
+git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
+git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
 # --------------------------------------vssr-----无用-----------------------------------------------------------
 # git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
 # git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
 # git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
-# -------------------------------------------lely
+# -------------------------------------------lely  不能用
 # 验证是否正确，如能编译，放开 下方
 # git clone --depth=1 https://github.com/beilsn/luci-app-vssr-plus package/luci-app-vssr-plus
 # git clone --depth=1 https://github.com/xuanranran/rely package/my
 # rm -rf {*passwall*,*bypass*,luci-app-ssr-plus,luci-app-vssr}
 
 
-#最新的 vssr                 ---------------lely 不能用用这个
-git clone --depth=1 https://github.com/8688Add/luci-app-vssr-plus package/luci-app-vssr-plus
+#最新的 vssr                 ---------------lely 不能用用这个    也不能用
+# git clone --depth=1 https://github.com/8688Add/luci-app-vssr-plus package/luci-app-vssr-plus
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
