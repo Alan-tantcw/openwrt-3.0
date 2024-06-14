@@ -68,9 +68,9 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
 git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
 # --------------------------------------vssr-----无用-----------------------------------------------------------
-# git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
-# git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
-# git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
+git_pas_clone master https://github.com/haiibo/openwrt-packages helloworld
+git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
+git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 # -------------------------------------------lely  不能用
 # 验证是否正确，如能编译，放开 下方
