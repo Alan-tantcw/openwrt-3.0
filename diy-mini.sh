@@ -77,7 +77,7 @@ git clone --depth=1 https://github.com/OpenWrt-Actions/luci-app-vssr package/ope
 #git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-vssr
 git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
-rm -rf feeds/packages/openwrt-packages/luci-app-ssr-plus
+
 
 
 # 添加额外插件
