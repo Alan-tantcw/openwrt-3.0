@@ -67,13 +67,13 @@ svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn
 # git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
 
 # #方案2 --------------------------------passwall---------------------------------------------------------------
-# git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
-# git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
+git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
+git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
 
 # #方案3-----------------------------------vssr--------------------------------------------------------------------
-git clone --depth=1 https://github.com/fw876/helloworld package/openwrt-packages/helloworld
-git clone --depth=1 https://github.com/ipenwrt/luci-app-vssr package/openwrt-packages/luci-app-vssr
-git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
+# git clone --depth=1 https://github.com/fw876/helloworld package/openwrt-packages/helloworld
+# git clone --depth=1 https://github.com/ipenwrt/luci-app-vssr package/openwrt-packages/luci-app-vssr
+# git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 
 
