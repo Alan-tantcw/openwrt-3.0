@@ -103,8 +103,8 @@ svn export https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns packag
 svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
 
 # Alist
-# git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
-git clone --depth=1 https://github.com/oppen321/luci-app-alist package/luci-app-alist
+git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
+# git clone --depth=1 https://github.com/oppen321/luci-app-alist package/luci-app-alist
 
 # iStore
 git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
