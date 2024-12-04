@@ -23,7 +23,7 @@ rm -rf package/helloworld
 # kenzok8依赖清除，防止冲突
 # rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
 
-# Git稀疏克隆，只克隆指定目录到本地
+# Git稀疏克隆，只克隆指定目录到本地/package 目录下
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
   git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
@@ -58,7 +58,7 @@ function git_pas_clone() {
 # 腾讯云DDNS
 git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
 # ipsec插件  vpn
-svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server package/luci-app-ipsec-server
+git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-ipsec-server
 # softEther (不启用)
 # svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 
@@ -87,8 +87,7 @@ git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/lu
 # Themes
 # git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 # git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
-git clone --depth=1 -b openwrt-24.10 https://github.com/sbwml/luci-theme-argon.git package/luci-theme-argon
-git clone --depth=1 -b openwrt-24.10 https://github.com/sbwml/luci-theme-argon.git package/luci-app-argon-config
+git clone --depth=1 -b openwrt-24.10 https://github.com/sbwml/luci-theme-argon.git package/
 
 # 更改 Argon 主题背景
 cp -f $GITHUB_WORKSPACE/images/bg.webp package/luci-theme-argon/htdocs/luci-static/argon/img/bg.webp
