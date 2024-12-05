@@ -70,7 +70,7 @@ git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-ipsec-s
 git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
 git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwall
 # passwall错误选项  移除错误包shadowsocksr-libev+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-rm -rf feeds/packages/openwrt-packages/openwrt-passwall/shadowsocksr-libev
+rm -rf packages/openwrt-packages/openwrt-passwall/shadowsocksr-libev
 
 # #方案3-----------------------------------vssr--------------------------------------------------------------------
 # git clone --depth=1 https://github.com/fw876/helloworld package/openwrt-packages/helloworld
