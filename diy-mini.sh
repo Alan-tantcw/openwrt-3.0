@@ -56,7 +56,7 @@ function git_pas_clone() {
 # ---------------------------------------------------------------2.多目录指定或要进下级目录 用 svn export
 # ---------------------------------------------------------------3.依赖包用echo指定到feeds，会自动安装依赖，clone 或者 svn export 指定luci插件
 # 腾讯云DDNS
-# git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
+git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/luci-app-tencentddns
 # ipsec插件  vpn
 git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-ipsec-server
 # softEther (不启用)
