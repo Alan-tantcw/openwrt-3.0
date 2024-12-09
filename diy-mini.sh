@@ -77,8 +77,9 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 
 # #docker---
 # git clone --depth=1 https://github.com/sbwml/luci-app-dockerman.git package/luci-app-dockerman
-# git_sparse_clone master https://github.com/kenzok8/openwrt-packages luci-app-dockerman
-git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package
+git_sparse_clone main https://github.com/kenzok8/small-package docker
+git_sparse_clone main https://github.com/kenzok8/small-package dockerd
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-dockerman
 
 
 # 添加额外插件
