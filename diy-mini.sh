@@ -12,3 +12,4 @@ sed -i "/ip6assign='60'/d" package/base-files/files/bin/config_generate
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+make -j4
