@@ -157,3 +157,4 @@ sed -i 's|admin\\|admin\\/services\\|g' feeds/luci/applications/luci-app-dockerm
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+make -j4
