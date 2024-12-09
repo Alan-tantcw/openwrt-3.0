@@ -76,8 +76,8 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 # git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 # #docker---
-# git clone --depth=1 https://github.com/sbwml/luci-app-dockerman.git package/luci-app-dockerman
-# git_sparse_clone master https://github.com/kenzok8/openwrt-packages luci-app-dockerman
+git clone --depth=1 https://github.com/sbwml/luci-app-dockerman.git package/luci-app-dockerman
+git_sparse_clone master https://github.com/kenzok8/openwrt-packages luci-app-dockerman
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
