@@ -77,7 +77,6 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 # git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 # #docker---
-git clone https://github.com/kenzok8/small-package.git package/small-package
 # git_sparse_clone main https://github.com/kenzok8/small-package docker
 # git_sparse_clone main https://github.com/kenzok8/small-package dockerd
 # git_sparse_clone main https://github.com/kenzok8/small-package luci-app-dockerman
