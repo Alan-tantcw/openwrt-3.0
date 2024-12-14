@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# https://github.com/kenzok8/small-package    kenzok8包
 # 修改默认IP
 sed -i 's/192.168.1.1/11.1.1.1/g' package/base-files/files/bin/config_generate
 # 禁用ipv6
@@ -63,9 +63,12 @@ git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-ipsec-s
 # softEther (不启用)
 # svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 
+# pptp
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-dockerman
+
 # 科学上网插件
 # #方案1  方案2 --------------------------------ssr-------------------------------------------------------------
-# git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
+# git clone --depth=1 https://github.com/fw876/helloworld luci-app-pptp-server
 
 # #方案2 --------------------------------passwall---------------------------------------------------------------
 git_pas_clone master https://github.com/haiibo/openwrt-packages openwrt-passwall
