@@ -24,6 +24,9 @@ rm -rf feeds/package/helloworld
 rm -rf feeds/packages/docker
 rm -rf feeds/packages/dockerd
 rm -rf feeds/packages/luci-app-dockerman
+rm -rf feeds/packages/utils/docker
+rm -rf feeds/packages/utils/dockerd
+rm -rf feeds/packages/utils/luci-app-dockerman
 
 
 # kenzok8依赖清除，防止冲突
