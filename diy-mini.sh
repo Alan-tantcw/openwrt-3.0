@@ -21,9 +21,9 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
-rm -rf feeds/package/docker
-rm -rf feeds/package/dockerd
-rm -rf feeds/package/luci-app-dockerman
+rm -rf feeds/packages/docker
+rm -rf feeds/packages/dockerd
+rm -rf feeds/packages/luci-app-dockerman
 
 
 # kenzok8依赖清除，防止冲突
