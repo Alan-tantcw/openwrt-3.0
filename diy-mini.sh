@@ -21,10 +21,6 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
-# 移除docker
-# rm -rf feeds/packages/{docker,dockerd,luci-app-dockerman}
-# rm -rf feeds/packages/utils/{docker,dockerd,luci-app-dockerman}
-# rm -rf feeds/luci/applications/luci-app-dockerman
 
 # kenzok8依赖清除，防止冲突
 # rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
@@ -166,4 +162,3 @@ sed -i 's|admin\\|admin\\/services\\|g' feeds/luci/applications/luci-app-dockerm
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-make -j4
