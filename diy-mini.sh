@@ -22,9 +22,9 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
 # 移除docker
-rm -rf feeds/packages/{docker,dockerd,luci-app-dockerman}
-rm -rf feeds/packages/utils/{docker,dockerd,luci-app-dockerman}
-rm -rf feeds/luci/applications/luci-app-dockerman
+# rm -rf feeds/packages/{docker,dockerd,luci-app-dockerman}
+# rm -rf feeds/packages/utils/{docker,dockerd,luci-app-dockerman}
+# rm -rf feeds/luci/applications/luci-app-dockerman
 # 移除宽带监控
 rm -rf feeds/luci/applications/luci-app-nlbwmon
 rm -rf feeds/packages/net/nlbwmon
@@ -87,9 +87,9 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 # git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 # #docker---
-git_sparse_clone main https://github.com/kenzok8/small-package docker
-git_sparse_clone main https://github.com/kenzok8/small-package dockerd
-git_sparse_clone main https://github.com/kenzok8/small-package luci-app-dockerman
+# git_sparse_clone main https://github.com/kenzok8/small-package docker
+# git_sparse_clone main https://github.com/kenzok8/small-package dockerd
+# git_sparse_clone main https://github.com/kenzok8/small-package luci-app-dockerman
 
 
 # 添加额外插件
