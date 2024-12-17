@@ -21,12 +21,8 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
-rm -rf feeds/packages/docker
-rm -rf feeds/packages/dockerd
-rm -rf feeds/packages/luci-app-dockerman
-rm -rf feeds/packages/utils/docker
-rm -rf feeds/packages/utils/dockerd
-rm -rf feeds/packages/utils/luci-app-dockerman
+rm -rf feeds/packages/{docker,dockerd,luci-app-dockerman}
+rm -rf feeds/packages/utils/{docker,dockerd,luci-app-dockerman}
 
 # 移除宽带监控
 rm -rf feeds/luci/applications/luci-app-nlbwmon
