@@ -28,6 +28,10 @@ rm -rf feeds/packages/utils/docker
 rm -rf feeds/packages/utils/dockerd
 rm -rf feeds/packages/utils/luci-app-dockerman
 
+# 移除宽带监控
+rm -rf feeds/luci/applications/luci-app-nlbwmon
+rm -rf feeds/packages/net/nlbwmon
+
 
 # kenzok8依赖清除，防止冲突
 # rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
