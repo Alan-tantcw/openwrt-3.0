@@ -23,6 +23,7 @@ rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
 rm -rf feeds/packages/{docker,dockerd,luci-app-dockerman}
 rm -rf feeds/packages/utils/{docker,dockerd,luci-app-dockerman}
+rm -rf feeds/luci/applications/luci-app-dockerman
 
 # 移除宽带监控
 rm -rf feeds/luci/applications/luci-app-nlbwmon
