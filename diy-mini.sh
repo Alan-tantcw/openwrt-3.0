@@ -49,16 +49,7 @@ function git_pas_clone() {
   mv -f $@ ../package/openwrt-packages/
   cd .. && rm -rf $repodir
 }
-# Git稀疏克隆，luci  目录
-function git_luci() {
-  branch="$1" repourl="$2" && shift 2
-  git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
-  repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
-  cd $repodir && git sparse-checkout set $@
-  mkdir -p "../luci/applications/"
-  mv -f $@ ../luci/applications/
-  cd .. && rm -rf $repodir
-}
+
 
 
 
@@ -87,9 +78,9 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 # git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
 
 # #docker---
-# git_sparse_clone main https://github.com/kenzok8/small-package docker
-# git_sparse_clone main https://github.com/kenzok8/small-package dockerd
-git_luci main https://github.com/kenzok8/small-package luci-app-dockerman
+git_sparse_clone main https://github.com/kenzok8/small-package docker
+git_sparse_clone main https://github.com/kenzok8/small-package dockerd
+git_pas_clone main https://github.com/kenzok8/small-package luci-app-dockerman
 
 
 # 添加额外插件
