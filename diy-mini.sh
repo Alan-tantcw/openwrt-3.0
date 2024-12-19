@@ -22,6 +22,8 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
 rm -rf feeds/luci/applications/luci-app-dockerman
+rm -rf feeds/packages/utils/dockerd
+rm -rf feeds/packages/utils/docker
 
 # kenzok8依赖清除，防止冲突
 # rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
