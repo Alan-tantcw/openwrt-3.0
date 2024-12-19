@@ -21,6 +21,7 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
+rm -rf feeds/luci/applications/luci-app-dockerman
 
 # kenzok8依赖清除，防止冲突
 # rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
@@ -46,6 +47,16 @@ function git_pas_clone() {
   cd $repodir && git sparse-checkout set $@
   mkdir -p "../package/openwrt-packages/"
   mv -f $@ ../package/openwrt-packages/
+  cd .. && rm -rf $repodir
+}
+# Git稀疏克隆，luci  目录
+function git_luci() {
+  branch="$1" repourl="$2" && shift 2
+  git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
+  repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
+  cd $repodir && git sparse-checkout set $@
+  mkdir -p "../luci/applications/"
+  mv -f $@ ../luci/applications/
   cd .. && rm -rf $repodir
 }
 
@@ -78,7 +89,7 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 # #docker---
 # git_sparse_clone main https://github.com/kenzok8/small-package docker
 # git_sparse_clone main https://github.com/kenzok8/small-package dockerd
-# git_luci main https://github.com/kenzok8/small-package luci-app-dockerman
+git_luci main https://github.com/kenzok8/small-package luci-app-dockerman
 
 
 # 添加额外插件
