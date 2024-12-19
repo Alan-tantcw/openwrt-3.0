@@ -21,9 +21,6 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
-rm -rf feeds/luci/applications/luci-app-dockerman
-rm -rf feeds/packages/utils/dockerd
-rm -rf feeds/packages/utils/docker
 
 # kenzok8依赖清除，防止冲突
 # rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*,passwall*}
@@ -78,11 +75,6 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 # git clone --depth=1 https://github.com/fw876/helloworld package/openwrt-packages/helloworld
 # git clone --depth=1 https://github.com/ipenwrt/luci-app-vssr package/openwrt-packages/luci-app-vssr
 # git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
-
-# #docker---
-git_pas_clone main https://github.com/kenzok8/small-package docker
-git_pas_clone main https://github.com/kenzok8/small-package dockerd
-git_pas_clone main https://github.com/kenzok8/small-package luci-app-dockerman
 
 
 # 添加额外插件
