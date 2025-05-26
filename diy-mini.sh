@@ -21,7 +21,7 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/package/helloworld
-rm -rf feeds/package/ddns-scripts
+rm -rf feeds/package/net/ddns-scripts
 
 
 # kenzok8依赖清除，防止冲突
