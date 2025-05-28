@@ -79,6 +79,7 @@ git_pas_clone master https://github.com/haiibo/openwrt-packages luci-app-passwal
 git clone --depth=1 https://github.com/fw876/helloworld package/openwrt-packages/helloworld
 git clone --depth=1 https://github.com/ipenwrt/luci-app-vssr package/openwrt-packages/luci-app-vssr
 git_pas_clone main https://github.com/kenzok8/small-package lua-maxminddb
+git_pas_clone main https://github.com/kenzok8/small-package shadowsocksr-libev
 
 
 # 添加额外插件
