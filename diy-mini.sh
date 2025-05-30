@@ -21,7 +21,6 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/packages/helloworld
-rm -rf feeds/packages/net/ddns-scripts
 
 
 # kenzok8依赖清除，防止冲突
@@ -62,8 +61,6 @@ git clone --depth=1 https://github.com/Alan-tantcw/luci-app-tencentddns package/
 # ipsec插件 pptp vpn
 git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-ipsec-server
 git_sparse_clone main https://github.com/kenzok8/small-package luci-app-pptp-server
-# ddns-scripts
-git_sparse_clone main https://github.com/kenzok8/small-package ddns-scripts
 # softEther (不启用)
 # svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-softethervpn package/luci-app-softethervpn
 
